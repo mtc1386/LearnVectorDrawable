@@ -1,0 +1,39 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="40dp"
+    android:viewportHeight="400.0"
+    android:viewportWidth="1000.0">
+    <!---->
+    <path
+        android:pathData="M200,0L800,0A200,200,0,0,1,800,400L200,400A200,200,0,0,1,200,0z"
+        android:strokeColor="#4a5660"
+        android:strokeLineJoin="miter"
+        android:strokeLineCap="round"
+        android:strokeMiterLimit="10"
+        android:strokeWidth="10" />
+
+    <path
+        android:name="frame_transform"
+        android:pathData="M200,0L800,0A200,200,0,0,1,800,400L200,400A200,200,0,0,1,200,0z"
+        android:strokeColor="#b7b558"
+        android:strokeWidth="10"
+        android:strokeLineJoin="miter"
+        android:strokeLineCap="round"
+        android:strokeMiterLimit="10"
+        android:trimPathOffset="1"
+        android:trimPathStart="1" />
+
+
+    <group
+        android:name="group_sun_mon"
+        android:pivotX="200"
+        android:pivotY="205"
+        android:translateX="0">
+        <path
+            android:name="sun_mon"
+            android:fillColor="#fdf100"
+            android:pathData="M200,60A140,140,0,0,1,200,340A140,140,0,0,1,200,60z" />
+
+    </group>
+
+</vector>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/vector_switch_sun_to_moon">
+
+    <target
+        android:animation="@animator/vector_anim_switch_frame"
+        android:name="frame_transform"/>
+
+    <target
+        android:animation="@animator/vector_anim_switch_group_sun_to_mon"
+        android:name="group_sun_mon"/>
+
+    <target
+        android:animation="@animator/vector_anim_switch_sun_to_moon_transform"
+        android:name="sun_mon"/>
+
+
+</animated-vector>

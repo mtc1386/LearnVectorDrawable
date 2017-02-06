@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+
+    <!-- 月牙到半圆 -->
+    <set android:ordering="together">
+        <objectAnimator
+            android:duration="299"
+            android:propertyName="pathData"
+            android:valueFrom="M200,60A140,140,0,0,1,200,340A360,360,0,0,0,200,60z"
+            android:valueTo="M200,60A140,140,0,0,1,200,340A360,1000,0,0,0,200,60z"
+            android:valueType="pathType" />
+        <objectAnimator
+            android:duration="300"
+            android:propertyName="fillColor"
+            android:valueFrom="#1546b7"
+            android:valueTo="#e7e778"
+            android:valueType="colorType" />
+    </set>
+
+    <!-- 更改画弧的方向 -->
+    <objectAnimator
+        android:duration="2"
+        android:propertyName="pathData"
+        android:valueFrom="M200,60A140,140,0,0,1,200,340A360,1000,0,0,0,200,60z"
+        android:valueTo="M200,60A140,140,0,0,1,200,340A360,1000,0,0,1,200,60z"
+        android:valueType="pathType" />
+
+    <!-- 半圆到圆 -->
+    <set android:ordering="together">
+        <objectAnimator
+            android:duration="150"
+            android:propertyName="pathData"
+            android:valueFrom="M200,60A140,140,0,0,1,200,340A360,1000,0,0,1,200,60z"
+            android:valueTo="M200,60A140,140,0,0,1,200,340A140,140,0,0,1,200,60z"
+            android:valueType="pathType" />
+
+        <objectAnimator
+            android:duration="300"
+            android:propertyName="fillColor"
+            android:valueFrom="#e7e778"
+            android:valueTo="#fdf100"
+            android:valueType="colorType" />
+    </set>
+
+
+</set>
